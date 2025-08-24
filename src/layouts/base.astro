@@ -22,14 +22,17 @@ import '../styles/global.css';
 </nav>
 </header>
 
+<section class="pt-24 mx-auto px-6">
+    <slot name="hero" />
+</section>
 
-<main class="pt-24 mx-auto px-6">
+<main class="pt-24 mx-auto px-6 max-w-7xl">
 <slot />
 </main>
 
 
 <footer class="mt-16 py-6 text-center border-t border-surface">
-<p class="text-sm text-gray-500">© {new Date().getFullYear()} Aerospace Club. All rights reserved.</p>
+<p class="text-sm text-gray-500">© {new Date().getFullYear()} UBCO Aerospace. All rights reserved.</p>
 </footer>
 </body>
 </html>

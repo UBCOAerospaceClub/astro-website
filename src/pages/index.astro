@@ -2,69 +2,69 @@
 import Base from "../layouts/base.astro";
 ---
 <Base title="UBCO Aerospace">
-<!-- Hero with video background -->
-<section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
-<img src="/astro-website/hero.png" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover opacity-40" />
-<div class="relative z-10">
-<h2 class="text-6xl md:text-7xl font-extrabold mb-6 animate-fade-in">Exploring Flight and Beyond</h2>
-<p class="text-2xl text-gray-200 mb-8 animate-fade-in delay-200">UAVs • Fixed-Wings • Rocketry</p>
-<a href="#join" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-2xl font-semibold shadow-glow transition transform hover:scale-105">Join the Mission</a>
-</div>
-</section>
+
+    <!-- Hero -->
+    <div slot="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <img src="/astro-website/hero.png" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <div class="relative z-10">
+            <h2 class="text-6xl md:text-7xl font-extrabold mb-6 animate-fade-in">Exploring Flight and Beyond</h2>
+            <p class="text-2xl text-gray-200 mb-8 animate-fade-in delay-200">UAVs • Fixed-Wings • Rocketry</p>
+            <a href="#join" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-2xl font-semibold shadow-glow transition transform hover:scale-105">Join the Club</a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="py-24 animate-slide-up">
+        <h3 class="text-4xl font-bold mb-6">About Us</h3>
+        <p class="text-gray-300 leading-relaxed text-lg">We are a student-run organization at UBCO, dedicated to advancing knowledge and skills in aerospace engineering. Our club brings together passionate students to design, build, and launch UAVs and rockets.</p>
+    </section>
 
 
-<!-- About -->
-<section id="about" class="py-24 animate-slide-up">
-<h3 class="text-4xl font-bold mb-6">About Us</h3>
-<p class="text-gray-300 leading-relaxed text-lg">We are a student-run organization at [University Name], dedicated to advancing knowledge and skills in aerospace engineering. Our club brings together passionate students to design, build, and launch UAVs and rockets.</p>
-</section>
+    <!-- Subdivisions -->
+    <section id="subdivisions" class="py-24 grid md:grid-cols-2 gap-12 animate-slide-up">
+        <div class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
+            <h4 class="text-3xl font-semibold mb-3">UAV Team</h4>
+            <p class="text-gray-300">Focused on drones and fixed-wing aircraft, this team works on autonomous flight, aerodynamics, and control systems.</p>
+        </div>
+        <div class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
+            <h4 class="text-3xl font-semibold mb-3">Rocketry Team</h4>
+            <p class="text-gray-300">Dedicated to amateur rocketry projects, from small-scale launches to high-power rocketry competitions.</p>
+        </div>
+    </section>
 
 
-<!-- Subdivisions -->
-<section id="subdivisions" class="py-24 grid md:grid-cols-2 gap-12 animate-slide-up">
-<div class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
-<h4 class="text-3xl font-semibold mb-3">UAV Team</h4>
-<p class="text-gray-300">Focused on drones and fixed-wing aircraft, this team works on autonomous flight, aerodynamics, and control systems.</p>
-</div>
-<div class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
-<h4 class="text-3xl font-semibold mb-3">Rocketry Team</h4>
-<p class="text-gray-300">Dedicated to amateur rocketry projects, from small-scale launches to high-power rocketry competitions.</p>
-</div>
-</section>
+    <!-- Projects -->
+    <section id="projects" class="py-24 animate-slide-up">
+        <h3 class="text-4xl font-bold mb-8">Projects</h3>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
+                <h5 class="font-semibold text-xl mb-2">Fixed-Wing UAV</h5>
+                <p class="text-gray-400">Autonomous aircraft designed for endurance and mapping missions.</p>
+            </div>
+            <div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
+                <h5 class="font-semibold text-xl mb-2">Quadcopter Drone</h5>
+                <p class="text-gray-400">Custom-built drones for flight testing and competition.</p>
+            </div>
+            <div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
+                <h5 class="font-semibold text-xl mb-2">Rocketry Launch Vehicle</h5>
+                <p class="text-gray-400">High-power rocket project aimed at reaching new altitudes.</p>
+            </div>
+        </div>
+    </section>
 
 
-<!-- Projects -->
-<section id="projects" class="py-24 animate-slide-up">
-<h3 class="text-4xl font-bold mb-8">Projects</h3>
-<div class="grid md:grid-cols-3 gap-10">
-<div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
-<h5 class="font-semibold text-xl mb-2">Fixed-Wing UAV</h5>
-<p class="text-gray-400">Autonomous aircraft designed for endurance and mapping missions.</p>
-</div>
-<div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
-<h5 class="font-semibold text-xl mb-2">Quadcopter Drone</h5>
-<p class="text-gray-400">Custom-built drones for flight testing and competition.</p>
-</div>
-<div class="p-6 bg-surface rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2">
-<h5 class="font-semibold text-xl mb-2">Rocketry Launch Vehicle</h5>
-<p class="text-gray-400">High-power rocket project aimed at reaching new altitudes.</p>
-</div>
-</div>
-</section>
+    <!-- Join Us -->
+    <section id="join" class="py-24 text-center animate-slide-up">
+        <h3 class="text-4xl font-bold mb-4">Join Us</h3>
+        <p class="text-gray-300 mb-8 text-lg">Interested in aerospace engineering, rocketry, or drones? We welcome students of all backgrounds and skill levels.</p>
+        <a href="mailto:ubcoaerospace@gmail.com" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-2xl font-semibold shadow-glow transition transform hover:scale-105">Get Involved</a>
+    </section>
 
 
-<!-- Join Us -->
-<section id="join" class="py-24 text-center animate-slide-up">
-<h3 class="text-4xl font-bold mb-4">Join Us</h3>
-<p class="text-gray-300 mb-8 text-lg">Interested in aerospace engineering, rocketry, or drones? We welcome students of all backgrounds and skill levels.</p>
-<a href="#contact" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-2xl font-semibold shadow-glow transition transform hover:scale-105">Get Involved</a>
-</section>
-
-
-<!-- Contact -->
-<section id="contact" class="py-24 animate-slide-up">
-<h3 class="text-4xl font-bold mb-6">Contact</h3>
-<p class="text-gray-300 text-lg">Reach us at <a href="mailto:aerospace@university.edu" class="text-brand-red hover:underline">aerospace@university.edu</a></p>
-<p class="text-gray-400 mt-3">Follow us on Instagram, YouTube, and LinkedIn.</p>
-</section>
+    <!-- Contact -->
+    <section id="contact" class="py-24 animate-slide-up">
+        <h3 class="text-4xl font-bold mb-6">Contact</h3>
+        <p class="text-gray-300 text-lg">Reach us at <a href="mailto:ubcoaerospace@gmail.com" class="text-brand-red hover:underline">ubcoaerospace@gmail.com</a></p>
+        <p class="text-gray-400 mt-3">Follow us on Instagram, YouTube, and LinkedIn.</p>
+    </section>
 </Base>
