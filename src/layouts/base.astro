@@ -4,35 +4,34 @@ import '../styles/global.css';
 ---
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{title}</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body class="bg-background text-brand-white font-sans">
-<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur border-b border-surface p-6 flex justify-between items-center">
-<h1 class="text-2xl font-bold tracking-wide">UBCO Aerospace</h1>
-<nav class="space-x-6 hidden md:flex">
-<a href="#about" class="hover:text-brand-red transition">About</a>
-<a href="#subdivisions" class="hover:text-brand-red transition">Subdivisions</a>
-<a href="#projects" class="hover:text-brand-red transition">Projects</a>
-<a href="#join" class="hover:text-brand-red transition">Join Us</a>
-<a href="#contact" class="hover:text-brand-red transition">Contact</a>
-</nav>
-</header>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet"></head>
+    <body class="bg-background text-brand-white font-body-sans">
+        <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur border-b border-surface p-6 flex justify-between items-center font-heading-sans">
+            <h1 class="text-2xl font-bold tracking-wide">UBCO Aerospace</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#about" class="hover:text-brand-red transition">About</a>
+                <a href="#subdivisions" class="hover:text-brand-red transition">Subdivisions</a>
+                <a href="#projects" class="hover:text-brand-red transition">Projects</a>
+                <a href="#join" class="hover:text-brand-red transition">Join Us</a>
+                <a href="#contact" class="hover:text-brand-red transition">Contact</a>
+            </nav>
+        </header>
 
-<section class="pt-24 mx-auto px-6">
-    <slot name="hero" />
-</section>
+        <section class="pt-24 mx-auto px-6">
+            <slot name="hero" />
+        </section>
 
-<main class="pt-24 mx-auto px-6 max-w-7xl">
-<slot />
-</main>
+        <main class="pt-24 mx-auto px-6 max-w-7xl">
+        <slot />
+        </main>
 
 
-<footer class="mt-16 py-6 text-center border-t border-surface">
-<p class="text-sm text-gray-500">© {new Date().getFullYear()} UBCO Aerospace. All rights reserved.</p>
-</footer>
-</body>
+        <footer class="mt-16 py-6 text-center border-t border-surface">
+            <p class="text-sm text-gray-500">© {new Date().getFullYear()} UBCO Aerospace. All rights reserved.</p>
+        </footer>
+    </body>
 </html>
