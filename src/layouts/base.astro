@@ -10,12 +10,15 @@ import '../styles/global.css';
     <title>{title}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet"></head>
     <body class="bg-background text-brand-white font-body-sans">
-        <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur border-b border-surface p-6 flex justify-between items-center font-heading-sans">
-            <h1 class="text-2xl font-bold tracking-wide">UBCO Aerospace</h1>
-            <nav class="space-x-6 hidden md:flex">
+        <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur border-b border-surface flex justify-between items-center font-heading-sans">
+            <div class="flex items-center space-x-4 p-2 pl-6">
+                <img src="/astro-website/logo-white.svg" alt="UBCO Aerospace Logo" class="h-12">
+                <h1 class="text-2xl font-bold tracking-wide">{title}</h1>
+            </div>
+            <nav class="space-x-6 hidden md:flex p-6">
                 <a href="#about" class="hover:text-brand-red transition">About</a>
                 <a href="#subdivisions" class="hover:text-brand-red transition">Subdivisions</a>
-                <a href="#projects" class="hover:text-brand-red transition">Projects</a>
+                <!-- <a href="#projects" class="hover:text-brand-red transition">Projects</a> -->
                 <a href="#join" class="hover:text-brand-red transition">Join Us</a>
                 <a href="#contact" class="hover:text-brand-red transition">Contact</a>
             </nav>
