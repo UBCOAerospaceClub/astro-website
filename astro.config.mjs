@@ -8,6 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "https://aerial-robotics-and-rocketry-club.github.io",
+  // site: "https://aerial-robotics-and-rocketry-club.github.io",
+  site: "https://ubcoaerospace.ca",
   // base: "/astro-website",
 });
