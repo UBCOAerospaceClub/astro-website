@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
   site: "https://aerial-robotics-and-rocketry-club.github.io",
-  base: "/astro-website",
+  // base: "/astro-website",
 });
