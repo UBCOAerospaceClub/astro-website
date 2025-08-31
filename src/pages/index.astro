@@ -24,13 +24,19 @@ import * as metadata from "./metadata.md";
 
     <!-- Subdivisions -->
     <section id="subdivisions" class="py-24 grid md:grid-cols-2 gap-12 animate-slide-up">
-        <a href="/uav" class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
-            <h4 class="text-3xl font-semibold mb-3 font-heading-sans">UAV Team</h4>
-            <p class="text-gray-300">{metadata.frontmatter.uav_description}</p>
+        <a href="/uav" class="relative p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow overflow-hidden">
+            <img src="/uav/UASDrone2025MedicineHatEventPhotoFinals-290.jpg" alt="UAV Background" class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none" />
+            <div class="relative z-10">
+                <h4 class="text-3xl font-semibold mb-3 font-heading-sans">UAV Team</h4>
+                <p class="text-gray-300">{metadata.frontmatter.uav_description}</p>
+            </div>
         </a>
-        <a href="/rocketry" class="p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow">
-            <h4 class="text-3xl font-semibold mb-3 font-heading-sans">Rocketry Team</h4>
-            <p class="text-gray-300">{metadata.frontmatter.rocketry_description}</p>
+        <a href="/rocketry" class="relative p-8 bg-surface rounded-2xl shadow-xl transform transition hover:scale-105 hover:shadow-glow overflow-hidden">
+            <img src="/rocketry/DSC03991.JPG" alt="Rocketry Background" class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none" />
+            <div class="relative z-10">
+                <h4 class="text-3xl font-semibold mb-3 font-heading-sans">Rocketry Team</h4>
+                <p class="text-gray-300">{metadata.frontmatter.rocketry_description}</p>
+            </div>
         </a>
     </section>
 
