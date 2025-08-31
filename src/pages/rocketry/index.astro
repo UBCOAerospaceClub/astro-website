@@ -1,0 +1,57 @@
+---
+import Base from "../../layouts/base.astro";
+const projects: Record<string, Record<string, any>>[] = Object.values(import.meta.glob("./projects/**/index.md", { eager: true }));
+---
+
+
+<Base title="Rocketry Team">
+	<!-- Hero / Quick Description -->
+	<section class="py-24 text-center animate-fade-in relative overflow-hidden">
+		<img 
+			src="/rocketry/DSC03991.JPG" 
+			alt="Rocketry Team Hero" 
+			class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none rounded-lg"
+		/>
+		<div class="relative z-10">
+			<h2 class="text-5xl font-extrabold mb-6 font-heading-sans">Rocketry Team</h2>
+			<p class="text-xl text-gray-300 mb-8">The Rocketry Team builds and launches high-power rockets, pushing the boundaries of amateur rocketry and engineering.</p>
+		</div>
+	</section>
+
+	<!-- Past & Current Projects -->
+	<section class="py-24">
+		<h3 class="text-3xl font-bold mb-6 font-heading-sans">Projects</h3>
+		<div class="overflow-x-auto">
+			<div class="flex gap-6 min-w-full pb-4" style="padding-top:0.5rem;">
+				{projects.map((project) => (
+					<a href={`${project.url}`} class="w-1/3 flex-shrink-0 p-6 rounded-xl shadow-md hover:shadow-glow transition transform hover:-translate-y-2 relative overflow-hidden">
+						<img 
+							src={`${project.url}/${project.frontmatter.thumbnail}`} 
+							alt="" 
+							class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+						/>
+						<div class="relative z-10">
+							<h4 class="font-semibold text-xl mb-2 font-heading-sans">{project.frontmatter.title}</h4>
+							<p class="text-gray-400">{project.frontmatter.description}</p>
+						</div>
+					</a>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Team Lead Information -->
+	<section class="py-24 text-center animate-slide-up">
+		<h3 class="text-3xl font-bold mb-4 font-heading-sans">Team Leads</h3>
+		<div class="flex flex-col md:flex-row justify-center gap-8">
+			<div>
+				<p class="text-gray-300 mb-2 text-lg font-semibold">Owen Plumb</p>
+				<p class="text-gray-400">Senior Director</p>
+			</div>
+			<div>
+				<p class="text-gray-300 mb-2 text-lg font-semibold">Anne Forbes</p>
+				<p class="text-gray-400">Director</p>
+			</div>
+		</div>
+	</section>
+</Base>
