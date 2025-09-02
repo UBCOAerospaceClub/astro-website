@@ -1,0 +1,21 @@
+---
+import Base from './base.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Base>
+    <section class="project-header-section mb-8">
+        <header class="relative flex flex-col justify-center items-center h-64 rounded-xl shadow-lg overflow-hidden">
+            <img src={`${frontmatter.url}/${frontmatter.thumbnail}`} alt={frontmatter.title} class="absolute inset-0 w-full h-full object-cover"/>
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="relative z-10 text-center px-6">
+                <h1 class="text-4xl font-bold mb-2 text-white">{frontmatter.title}</h1>
+                <p class="text-lg text-gray-200">{frontmatter.description}</p>
+            </div>
+        </header>
+    </section>
+    <article class="prose dark:prose-invert prose-h1:font-bold prose-h1:text-xl prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl prose-headings:underline mx-auto max-w-[700px]">
+        <slot />
+    </article>
+</Base>
