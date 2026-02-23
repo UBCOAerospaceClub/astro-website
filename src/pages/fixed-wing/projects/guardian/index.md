@@ -7,8 +7,8 @@ thumbnail: IMG_6464.JPG
 
 **Guardian** is the first fixed wing aircraft designed fully by the fixed wing division from UBCO Aerospace. This aircraft was created with the ultimate goal of enabling the division to **compete in international competitions** such as SAE, DBF, and other competitions of similar nature.
 
-<video width="100%" height="auto" controls>
-  <source src="flight.mp4" type="video/mp4">
+<video width="100%" height="auto" class="rounded-xl" controls>
+  <source src="/fixed-wing/projects/guardian/flight.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
