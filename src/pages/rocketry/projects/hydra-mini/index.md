@@ -1,7 +1,7 @@
 ---
 layout: ../../../../layouts/project.astro
 title: Hydra Mini
-description: Rocket project aimed at reaching new altitudes and testing avionics systems.
+description: Clustered Hybrid Rocket
 thumbnail: DSC03392.JPG
 ---
 
