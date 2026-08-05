@@ -1,15 +1,15 @@
 ---
 layout: ../../../../layouts/project.astro
-title: Jellyfish V2
+title: Jellyfish II - 2025
 description: The Club’s Wildfire Response Drone  
 thumbnail: 5D3_1073.JPG
 ---
 
-**Jellyfish V2** is UBCO Aerospace’s student-built drone, designed to compete in the **2025 Aerial Evolution Association of Canada (AEAC) Student UAS Competition**. This national competition challenges university teams to design, build, and fly drones capable of supporting **wildfire detection and response**.  
+**Jellyfish II** is UBCO Aerospace’s student-built drone, designed to compete in the **2025 Aerial Evolution Association of Canada (AEAC) Student UAS Competition**. This national competition challenges university teams to design, build, and fly drones capable of supporting **wildfire detection and response**.  
 
 ---
 
-## Why We Built Jellyfish V2  
+## Why We Built Jellyfish II  
 After Canada’s record-breaking wildfire season in 2023, the AEAC created a competition where students design drones to help detect fires early and deliver water to hotspots.  
 
 ![Competition Field Map](comp_map.png)  
@@ -33,8 +33,8 @@ The AEAC competition required teams to complete two missions:
 
 ---
 
-## The Drone: Jellyfish V2  
-Jellyfish V2 was designed from the ground up to meet these wildfire challenges.  
+## The Drone: Jellyfish II  
+Jellyfish II was designed from the ground up to meet these wildfire challenges.  
 
 ![Tank Design](jason_tank.jpg)  
 
@@ -83,4 +83,4 @@ Future work will focus on:
 ---
 
 ## About the Team  
-The **UBCO Aerospace** is a student-run group developing drones and aerospace tech. Competitions like AEAC allow us to test designs against real-world wildfire challenges.  
+The **UBCO Aerospace** is a student-run group developing drones and aerospace tech. Competitions like AEAC allow us to test designs against real-world wildfire challenges.
